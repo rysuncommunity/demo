@@ -13,14 +13,14 @@
     "build:watch": "tsc -w"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "lib/"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/rysunlabs/demo"
+    "url": "https://github.com/rysunlabs/demo.git"
   },
   "author": "Jayrajsinh zala",
   "license": "ISC",
