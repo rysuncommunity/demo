@@ -3,7 +3,7 @@ name: "publish security gate npm"
 on: 
   push:
     branches:
-              Dev
+              main
 jobs: 
   release:         
         runs-on: ubuntu-latest  
