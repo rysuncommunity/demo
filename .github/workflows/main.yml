@@ -1,4 +1,4 @@
-name: "publish security gate npm"
+name: "publish temporary npm"
 
 on: 
   push:
@@ -16,13 +16,14 @@ jobs:
             - name: node
               uses: actions/setup-node@v3
               with:
-                  node-version: '16.x'
+                  node-version: '14.x'
                   registry-url: https://registry.npmjs.org
             - name: publish
               run:  | 
                 npm install              
                 tsc -p tsconfig.json
                 tsc -p tsconfig-cjs.json
-                npm publish           
+              run:
+                npm publish --access public               
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}            
