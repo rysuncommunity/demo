@@ -23,6 +23,6 @@ jobs:
                 npm install              
                 tsc -p tsconfig.json
                 tsc -p tsconfig-cjs.json
-                npm publish --access public               
+                npm publish           
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}            
