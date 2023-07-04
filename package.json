@@ -22,7 +22,7 @@
     "type": "git",
     "url": "https://github.com/rysunlabs/demo.git"
   },
-  "author": "Jayrajsinh zala",
+  "author": "Imran Kazi",
   "license": "ISC",
   "devDependencies": {
     "@types/glob": "^8.0.0",
