@@ -11,10 +11,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "build:watch": "tsc -w"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+  }, 
   "files": [
     "lib/"
   ],
