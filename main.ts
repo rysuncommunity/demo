@@ -4,11 +4,11 @@ import os from "os"
 import fs from "fs"
 
 // add the pre hooks in core.hooksPath in git config file
-exec("git config core.hooksPath ./node_modules/security_gate/.security-gate")
+exec("git config core.hooksPath ./node_modules/@jayrajsinhzala/demo/.security-gate")
 
 const type = os.type();
 if(type !== "Windows_NT"){
-    exec("chmod ug+x ./node_modules/security_gate/.security-gate/*")
+    exec("chmod ug+x ./node_modules/@jayrajsinhzala/demo/.security-gate/*")
 }
 
 // template for pre hooks
@@ -24,10 +24,10 @@ v=$\{b%%[)| ]*}
 
 export PATH="$NVM_DIR/versions/node/$v/bin:$PATH"
 
-node ./node_modules/security_gate/dist/index.js`
+node ./node_modules/@jayrajsinhzala/demo/dist/index.js`
 
 // write that template in pre-commit and pre-push shell files in the OS type is 'Linux'
 if(type === "Linux"){
-    fs.writeFileSync(`./node_modules/security_gate/.security-gate/pre-commit`, template)
-    fs.writeFileSync(`./node_modules/security_gate/.security-gate/pre-push`, template)
+    fs.writeFileSync(`./node_modules/@jayrajsinhzala/demo/.security-gate/pre-commit`, template)
+    fs.writeFileSync(`./node_modules/@jayrajsinhzala/demo/.security-gate/pre-push`, template)
 }

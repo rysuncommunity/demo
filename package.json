@@ -1,6 +1,6 @@
 {
   "name": "@jayrajsinhzala/demo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "keywords": ["temporary_package"],
   "main": "./lib/cjs/main.js",
