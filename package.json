@@ -1,6 +1,6 @@
 {
-  "name": "@jayrajsinhzala/demo",
-  "version": "1.0.4",
+  "name": "security_gate_demo",
+  "version": "1.0.0",
   "description": "",
   "keywords": ["temporary_package"],
   "main": "./lib/cjs/main.js",
