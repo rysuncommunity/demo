@@ -19,7 +19,6 @@ jobs:
                   node-version: 14.x
                   registry-url: https://registry.npmjs.org
                   scope: "@jayrajsinhzala"
-            - name: publish
             - run:  | 
                 npm install              
                 tsc -p tsconfig.json
