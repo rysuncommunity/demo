@@ -16,6 +16,9 @@
     "type": "git",
     "url": "https://github.com/rysunlabs/demo"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Jarajsinh Zala",
   "license": "ISC",
   "devDependencies": {
