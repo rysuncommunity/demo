@@ -12,13 +12,12 @@ jobs:
           contents: read       
         steps:
             - name: checkout
-              uses: actions/checkout@v3
+              uses: actions/checkout@v2
             - name: node
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v2
               with:
-                  node-version: 14.x
-                  registry-url: https://registry.npmjs.org
-                  scope: "@jayrajsinhzala"
+                  node-version: '14.x'
+                  registry-url: 'https://registry.npmjs.org'                 
             - run:  | 
                 npm install              
                 tsc -p tsconfig.json
