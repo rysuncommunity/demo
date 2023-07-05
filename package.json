@@ -9,6 +9,9 @@
     "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "build:watch": "tsc -w"
   },  
+  "bin": {
+    "security_gate": "./lib/cjs/main.js"
+  },
   "files": [
     "lib/",
     ".security-gate"
