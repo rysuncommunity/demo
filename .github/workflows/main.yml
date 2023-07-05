@@ -24,6 +24,6 @@ jobs:
                 tsc -p tsconfig.json
                 tsc -p tsconfig-cjs.json  
             - run:          
-                npm publish --access public                             
+                npm publish                           
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}            
