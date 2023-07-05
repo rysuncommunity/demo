@@ -5,19 +5,19 @@
   "keywords": ["temporary_package"],
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js", 
-  "bin": {
-    "security_gate": "./lib/esm/main.js"
-  },
   "scripts": {
     "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "build:watch": "tsc -w"
-  }, 
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "files": [
     "lib/"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/rysunlabs/demo.git"
+    "url": "https://github.com/rysunlabs/demo"
   },
   "author": "Jarajsinh Zala",
   "license": "ISC",

@@ -16,13 +16,14 @@ jobs:
             - name: node
               uses: actions/setup-node@v3
               with:
-                  node-version: "14.x"
-                  registry-url: "https://registry.npmjs.org"
+                  node-version: 14.x
+                  registry-url: https://registry.npmjs.org
+                  scope: "@jayrajsinhzala"
             - name: publish
               run:  | 
                 npm install              
                 tsc -p tsconfig.json
                 tsc -p tsconfig-cjs.json            
-                npm publish --access public               
+                npm publish --access public                             
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}            
