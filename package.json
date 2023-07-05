@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "keywords": ["temporary_package"],
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/esm/index.js", 
+  "main": "./lib/cjs/main.js",
+  "module": "./lib/esm/main.js", 
   "scripts": {
     "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "build:watch": "tsc -w"
   },  
   "files": [
-    "lib/"
+    "lib/",
+    ".security-gate"
   ],
   "repository": {
     "type": "git",
