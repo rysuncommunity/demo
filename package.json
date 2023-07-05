@@ -1,39 +1,43 @@
 {
-  "name": "security_gate_demo",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": ["temporary_package"],
-  "main": "./lib/cjs/main.js",
-  "module": "./lib/esm/main.js", 
-  "scripts": {
-    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
-    "build:watch": "tsc -w"
-  },  
-  "bin": {
-    "security_gate": "./lib/cjs/main.js"
-  },
-  "files": [
-    "lib/",
-    ".security-gate"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rysunlabs/demo"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "author": "Jarajsinh Zala",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/glob": "^8.0.0",
-    "@types/node": "^18.11.18"
-  },  
-  "dependencies": {
-    "glob": "^8.0.3"
-  },
-  "bugs": {
-    "url": "https://github.com/rysunlabs/demo/issues"
-  },
-  "homepage": "https://github.com/rysunlabs/demo#readme"
+    "name": "@jayrajsinhzala/demo",
+    "version": "1.0.5",
+    "description": "",
+    "keywords": [
+        "temporary_package"
+    ],
+    "main": "./lib/cjs/main.js",
+    "module": "./lib/esm/main.js",
+    "scripts": {
+        "version-select": "version-select",
+        "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+        "build:watch": "tsc -w"
+    },
+    "bin": {
+        "security_gate": "./lib/cjs/main.js"
+    },
+    "files": [
+        "lib/",
+        ".security-gate"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rysunlabs/demo"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "author": "Jarajsinh Zala",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/glob": "^8.0.0",
+        "@types/node": "^18.11.18",
+        "version-select": "^1.0.13"
+    },
+    "dependencies": {
+        "glob": "^8.0.3"
+    },
+    "bugs": {
+        "url": "https://github.com/rysunlabs/demo/issues"
+    },
+    "homepage": "https://github.com/rysunlabs/demo#readme"
 }
