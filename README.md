@@ -4,7 +4,7 @@ This package provides the security that check the console.log() in all files the
 
 ## Installation & Usage
 
-To install this package enter this command on your terminal:
+To install this package please enter this command on your terminal:
 ```bash
 npm install security_gate
 or
